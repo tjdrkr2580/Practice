@@ -1,0 +1,32 @@
+* {
+    font-size: 2vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #202124;
+    text-decoration: none;
+}
+
+.navi {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navi .navi_icon {
+    margin: 0 15px 0 5px;
+    color: white;
+}
+
+.navi img {
+    width: 30px;
+    height: 30px;
+}
+
+.navi button {
+    border: none;
+    color: #202124;
+    background-color: #8AB4F8;
+    border-radius: 4px;
+}
