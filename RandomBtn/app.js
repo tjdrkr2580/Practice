@@ -7,7 +7,6 @@ let value2 = 0;
 
 
 function clickButton(){
-    console.log(value2);
     value2 = Math.floor(Math.random() * 50);
     value.innerText = `Value = ${value2}`;
 }

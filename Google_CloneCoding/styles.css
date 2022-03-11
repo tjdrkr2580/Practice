@@ -30,3 +30,21 @@
     background-color: #8AB4F8;
     border-radius: 4px;
 }
+
+.search_form {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    border-radius: 24px;
+    height: 6vh;
+    background-color: white;
+}
+
+#search {
+    border: none;
+    background-color: white;
+}
+
+#search:focus {
+    outline: none;
+}
