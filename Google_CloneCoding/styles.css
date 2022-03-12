@@ -1,5 +1,9 @@
+html {
+    width: 100%;
+    height: 100%;
+}
 * {
-    font-size: 2vh;
+    font-size: 14px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,39 +16,138 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 11px;
+    font-size: 12px;
 }
 
 .navi .navi_icon {
-    margin: 0 15px 0 5px;
-    color: white;
+    margin: 0 5px;
 }
 
-.navi img {
-    width: 30px;
-    height: 30px;
+.navi a {
+    color: white;
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+.left {
+    position: absolute;
+    left: 1vh;
+    margin: 5px;
+}
+
+.left a:hover,
+.right a:hover {
+    text-decoration: underline;
+}
+
+.right {
+    margin: 12px 1px;
+    padding-right: 11px;
+}
+
+.navi_icon {
+    font-size: 14px;
 }
 
 .navi button {
+    width: 96px;
+    height: 36px;
     border: none;
     color: #202124;
     background-color: #8AB4F8;
     border-radius: 4px;
 }
 
+.navi button:active {
+    transform: scale(0.89);
+}
+
+.google-Form {
+    position: absolute;
+    top: 23.5vw;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .search_form {
+    margin-top: 3vh;
     display: flex;
     align-items: center;
-    width: 70vw;
+    width: 582px;
     border-radius: 24px;
-    height: 6vh;
-    background-color: white;
+    height: 44px;
+    border: 1px solid rgb(71,74,78);
 }
+
+.logo img {
+    position: relative;
+    top: 8px;
+}
+
 
 #search {
     border: none;
-    background-color: white;
+    width: 500px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 16px;
+    padding-bottom: 3px;
+    color: white;
 }
 
 #search:focus {
     outline: none;
+}
+
+.buttons {
+    padding: 18px 0;
+}
+
+.buttons button {
+    border-radius: 4px;
+    width: auto;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    margin: 11px 4px;
+    padding: 0 16px;
+    border: none;
+    color: white;
+    background-color: #303134;
+}
+
+.buttons button:last-child {
+    transform: translateY(-3%);
+}
+
+.buttons button:active {
+    transform: scale(0.89);
+    outline: #4285f4;
+}
+
+a {
+    padding: 3px;
+}
+
+.service {
+    color: hsl(204,12%,64%);
+}
+
+.service a {
+    color: #8AB4F8;
+}
+
+.service a:hover {
+    text-decoration: underline;
+}
+
+.bottom_info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #171717;
 }
