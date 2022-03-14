@@ -8,29 +8,42 @@
 }
 
 body {
-    height: 100vh;
+    height: 95vh;
     font-family: deemofont;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/login-form/dasu0oe-f2a00db7-ecf7-47e9-99fa-24866fccfbb5.png");
 }
 
 .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
-    align-items: center;
-
 }
 
-img {
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header_logo {
+    width: 10vw;
+    height: auto;
+}
+
+#login_logo {
     width: 30vw;
     height: 15vh;
     height: auto;
+    margin-bottom: 2vw;
 }
 
 .email {
@@ -39,13 +52,41 @@ img {
 }
 
 input {
+    padding-left: 8px;
     background-color: transparent !important;
     border-left: 0;
     border-top: 0;
     border-right: 0;
     border-bottom: 1px solid black;
+    margin-bottom: 15px;
 }
 
 input:focus {
     outline: none;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input:focus {
+    border-bottom: white 1px solid;
+}
+
+button {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+
+button:active {
+    transform: scale(0.94);
+}
+
+button:hover {
+    color: white;
+    border-bottom: 1px solid white;
 }
