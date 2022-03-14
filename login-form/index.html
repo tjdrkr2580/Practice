@@ -17,14 +17,23 @@
                 id="login_logo"
                 src="189d1fbe88a42e460872f8b507b1cc1566e6d7ef6e272696f1507f4f42572f264d15b885c1486742ae2ba4c4faec51bb67b2bf45f2d8fe7c4aded1b3e65b3fd02ef95244cb16d089d5ba2348d7328194fb84366f36ba3e799249e6b906eda6a4.png"
                 alt="deemo logo">
-            <div class="login">
-                <div class="email"><input type="email" class="email" placeholder="Email"></li>
+            <div id="login">
+                <form action="#">
+                    <div id="user-form"><input type="text" id="user" placeholder="Username" required="required"></li>
+                </div>
+                <div class="passwd-form"><input type="password" id="pwd" placeholder="Password" required="required"></div>
+            </form>
+            <div class="welcome">
+                <h2 class="welcome-user"></h2>
             </div>
-            <div class="passwd"><input type="password" class="pwd" placeholder="Password"></div>
-            <button type="submit">Login</button>
-            <button type="submit">forgot password ?</button>
+            <button id="login-button" type="submit">
+                <a>Login</a>
+            </button>
+            <button id="forgot-password">
+                <a>forgot password ?</a>
+            </button>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="app.js" defer="defer"></script>
 </body>
 </html>

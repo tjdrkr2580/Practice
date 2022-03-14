@@ -3,6 +3,10 @@
     src: url("FANTIQUE.TTF") format('truetype');
 }
 
+.hidden {
+    display: none;
+}
+
 * {
     font-family: deemofont;
 }
@@ -14,6 +18,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/login-form/dasu0oe-f2a00db7-ecf7-47e9-99fa-24866fccfbb5.png");
+}
+
+li {
+    text-align: center;
+    list-style: none;
 }
 
 .login-form {
@@ -28,7 +37,7 @@ body {
     flex-direction: column;
 }
 
-.login {
+#login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +55,7 @@ body {
     margin-bottom: 2vw;
 }
 
-.email {
+.user {
     display: flex;
     align-items: center;
 }
@@ -77,16 +86,22 @@ button {
     border-left: 0;
     border-top: 0;
     border-right: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 0;
     background-color: transparent;
     margin-bottom: 5px;
 }
+
+button:hover {
+    color: white;
+    border-radius: 3px;
+    border-bottom: 2px solid white;
+    transition: 0.3s;
+}
+
+
 
 button:active {
     transform: scale(0.94);
 }
 
-button:hover {
-    color: white;
-    border-bottom: 1px solid white;
-}
+
