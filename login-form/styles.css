@@ -61,10 +61,10 @@ li {
 }
 
 input {
-    width: 30vw;
-    height: 3vh;
+    width: 35vw;
+    height: 4.5vh;
     padding-left: 8px;
-    font-size: 2vw;
+    font-size: 2.8vw;
     background-color: transparent !important;
     border-left: 0;
     border-top: 0;
@@ -86,7 +86,7 @@ input:focus {
 }
 
 button {
-    font-size: 1.5vw;
+    font-size: 2.4vw;
     border-left: 0;
     border-top: 0;
     border-right: 0;
