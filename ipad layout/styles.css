@@ -18,11 +18,11 @@ li {
     list-style: none;
 }
 
-li > img {
+.icon {
     z-index: 1;
     margin-right: 40px;
-    margin-top: 50px;
-    width: 80px;
+    margin-top: 70px;
+    width: 70px;
 }
 
 
@@ -40,6 +40,6 @@ li > img {
     height: 520px;
 }
 
-img:active{
+.icon:active {
     transform: scale(0.94);
 }
