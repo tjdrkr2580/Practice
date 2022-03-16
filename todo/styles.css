@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.todo_header {
+    text-align: center;
+}
+
+
+.todo_btn {
+    margin-top: 10px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.todo_btn:hover {
+    background-color: cadetblue;
+}
+
+.todo_btn:active {
+    transform: scale(0.89);
+    background-color: blue;
+}
+
+#todo_input {
+    margin: 16px 12px 0 0;
+}
+
+#todo_input:focus {
+    outline: none;
+}
+
+button {
+    width: 40px;
+    height: 30px;
+}
+
+li {
+    list-style: circle;
+}
