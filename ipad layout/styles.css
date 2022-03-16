@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+}
+
+.ipad {
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 600px;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li > img {
+    z-index: 1;
+    margin-right: 40px;
+    margin-top: 50px;
+    width: 80px;
+}
+
+
+.display {
+    border: none;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/dc64e7_e458b53d984e489a98f11ebfa4ce12b2_mv2.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    height: 520px;
+}
+
+img:active{
+    transform: scale(0.94);
+}
