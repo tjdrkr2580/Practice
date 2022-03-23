@@ -2,7 +2,7 @@ const tdSubbtn = document.querySelector(".hidden");
 const tdInput = document.querySelector("#todo_input");
 const tdList = document.querySelector(".todo-list");
 
-const toDos = [];
+let toDos = [];
 
 
 function tdSave(){
@@ -16,10 +16,6 @@ function tdDelete(event) {
 }
 
 
-function sayHello(){
-    console.log(`안녕`);
-}
-
 function tdSubbtnClick(event){
     let ul = document.querySelector("ul");
     let li = document.createElement("li");
@@ -27,7 +23,7 @@ function tdSubbtnClick(event){
     button.innerText = "❌";
     event.preventDefault();
     li.innerText = `${tdInput.value}`;
-    toDos.push(tdInput.value)
+    toDos.push()
     ul.appendChild(li);
     li.appendChild(button);
     tdInput.value = ""
@@ -39,8 +35,11 @@ tdSubbtn.addEventListener("click",tdSubbtnClick);
 
 const todoSaved = localStorage.getItem("todos");
 console.log(todoSaved);
+
+
 if (todoSaved !== null){
     const todoParsed = JSON.parse(todoSaved);
+    toDos = todoParsed;
     console.log(todoParsed);
-    todoParsed.forEach(sayHello);
+    todoParsed.forEach(tdSubbtnClick);
 }
