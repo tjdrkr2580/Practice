@@ -29,8 +29,14 @@ div:nth-of-type(2n){
     transform: translate(-50%,-50%) rotate(45deg);
     border-top: transparent;
     border-left: transparent;
-    animation: MoveArrow ease-in-out infinite;
+    animation: MoveArrow 1s ease-in-out infinite;
 }
+
+.scroll-down::after {
+    top: 30%;
+    animation-delay: 0.3s;
+}
+
 
 @keyframes MoveArrow {
     0% {
