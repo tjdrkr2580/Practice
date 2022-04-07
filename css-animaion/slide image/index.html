@@ -14,7 +14,7 @@
                 width: 300vw;
                 display: flex;
                 flex-direction: row;
-                transition: 0.5s transform;
+                transition: transform 0.5s;
             }
 
             .inner {
@@ -47,9 +47,20 @@
 
         <script>
             const container = document.querySelector(".container"); 
+            const button1 = document.querySelector(".btn1");
             const button2 = document.querySelector(".btn2");
+            const button3 = document.querySelector(".btn3");
+            
+            button1.addEventListener("click",function(){
+                container.style.transform = "translate(0)";
+            });
+
             button2.addEventListener("click",function(){
                 container.style.transform = "translate(-100vw)";
+            });
+
+            button3.addEventListener("click",function(){
+                container.style.transform = "translate(-200vw)";
             });
 
         </script>
