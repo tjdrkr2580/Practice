@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carousel</title>
+        <style>
+            body {
+                margin: 0;
+            }
 
-    </style>
-</head>
-<body> 
-    <script>
+            .container {
+                width: 300vw;
+                display: flex;
+                flex-direction: row;
+                transition: 0.5s transform;
+            }
 
-    </script>
-</body>
+            .inner {
+                width: 100vw;
+            }
+
+            .inner img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="overflow: hidden;">
+            <div class="container">
+                <div class="inner">
+                    <img src="first.jpg">
+                </div>
+                <div class="inner">
+                    <img src="second.jpg">
+                </div>
+                <div class="inner">
+                    <img src="third.jpg">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn1">1</button>
+        <button class="btn2">2</button>
+        <button class="btn3">3</button>
+
+        <script>
+            const container = document.querySelector(".container"); 
+            const button2 = document.querySelector(".btn2");
+            button2.addEventListener("click",function(){
+                container.style.transform = "translate(-100vw)";
+            });
+
+        </script>
+    </body>
 </html>
