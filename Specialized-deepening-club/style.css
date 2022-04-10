@@ -1,0 +1,140 @@
+* {
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    z-index: -1;
+    filter: brightness(40%);
+    width: 100vw;
+    height: 100vh;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+p {
+
+    font-size: 1rem;
+    color: white;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    font-family: D2Coding;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    transition: color 0.4s;
+}
+
+a:active {
+    transform: scale(0.94);
+}
+
+i {
+    font-size: 18px;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.backgrounds {
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-arrow-right {
+    margin-top: 12px;
+    font-size: 18px;
+    color: white;
+}
+
+.fa-arrow-right:hover {
+    transition: color 0.5s;
+    color: cornflowerblue;
+}
+
+.fa-arrow-right:active {
+    transform: scale(0.94);
+}
+
+
+.nav {
+    width: 100vw;
+    text-align: center;
+    top: 5%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    position: absolute;
+    right: 12%;
+}
+.left {
+    position: absolute;
+    left: 12%;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: lighter;
+    font-family: D2Coding;
+    color: white;
+}
+
+.text-form {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.focus {
+    padding: 0 8px;
+    font-size: 1.5rem;
+}
+
+
+.focus:hover {
+    transition: color 0.5s;
+    color: cornflowerblue;
+}
