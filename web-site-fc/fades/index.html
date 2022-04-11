@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web</title>
+        <style>
+
+            @font-face {
+                font-family: textFont;
+                src: url("./FANTIQUE.TTF");
+            }
+
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                -ms-overflow-style: none;
+                /* IE, Edge */
+                scrollbar-width: none;
+                /* Firefox */
+            }
+
+            body::-webkit-scrollbar {
+                display: none;
+            }
+
+            button {
+                cursor: pointer;
+                border: none;
+                background: transparent;
+                color: white;
+                border-radius: 16px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 1rem;
+            }
+
+            button:hover {
+                color: rosybrown;
+                transition: color 0.4s;
+            }
+
+            button:active {
+                transform: scale(0.94);
+            }
+
+            .container {
+                overflow: hidden;
+                height: auto;
+            }
+
+            .nav_bar {
+                z-index: 2;
+                width: 100%;
+                margin-top: 1.5rem;
+                position: fixed;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .nav_bar .left {
+                font-weight: 100;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 2rem;
+                position: relative;
+                color: white;
+            }
+
+            .nav_bar .right {
+                position: relative;
+            }
+
+            .home {
+                width: 100vw;
+                height: 150vh;
+                background: url("./images/b1.png") fixed;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-family: textFont;
+            }
+
+            .text > .title {
+                font-size: 6vh;
+            }
+
+            .text > .des {
+                font-size: 3.5vh;
+            }
+
+            .fc:hover {
+                transition: color 0.5s;
+                color: tan;
+            }
+
+            .main {
+                text-align: center;
+                position: relative;
+                width: 100vw;
+                height: 150vh;
+                background: url("./images/Tohad\ on\ Twitter.png") fixed;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .end {
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                background: url("./images/GaryGoh\ Beautiful\ View\ Wallpapers\ HD\ Wallpapers.jpg") fixed;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="nav_bar">
+            <div class="left">Good View</div>
+            <div class="right">
+                <button>Introduction</button>
+                <button>Sign up</button>
+                <button>Terms</button>
+            </div>
+        </header>
+            <div class="container">
+            <div class="home">
+                <div class="text">
+                    <h1 class="title">
+                        <p class="fc">Welcome to Good View</p>
+                    </h1>
+                    <p class="des">You were very cool today.</p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="text">
+                    <h1 class="title">
+                        <p class="fc">Let's fall into the beautiful scenery</p>
+                    </h1>
+                    <p class="des">Because your day is precious.</p>
+                </div>
+            </div>
+            <footer class="end">
+                <div class="text">
+                    <h1 class="title">
+                        <p class="fc">Take a rest for the next day</p>
+                    </h1>
+                    <p class="des">There is a beautiful tomorrow.</p>
+                </footer>
+            </div>
+
+        </body>
+    </html>
