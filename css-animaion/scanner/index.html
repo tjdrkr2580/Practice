@@ -26,6 +26,35 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
+            }
+            .scan .fingerprint {
+                position: relative;
+                width: 300px;
+                height: 380px;
+                background: url(./fingerPrint_01.png);
+                background-size: 300px;
+            }
+
+            .scan .fingerprint::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url(./fingerPrint_02.png);
+                background-size: 300px;
+                animation: animate 4s ease-in-out infinite;
+            }
+
+            @keyframes animate {
+                0% {
+                    height: 0%;
+                }
+                100% {
+                    height: 100%;
+                }
             }
         </style>
     </head>

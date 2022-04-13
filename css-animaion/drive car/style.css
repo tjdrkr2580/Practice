@@ -39,7 +39,7 @@ body {
 /* Animation */
 
 @keyframes moveRight {
-    100%{transform: translateX(-40%);}
+    100%{transform: translateX(-55%);}
 }
 
 @keyframes suspension {
