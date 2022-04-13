@@ -21,11 +21,14 @@
                 background-color: #111;
             }
 
-            .scan h3 {
+            h3 {
                 text-transform: uppercase;
                 font-size: 2em;
                 letter-spacing: 2px;
-
+                margin-top: 20px;
+                color: #3fefef; 
+                filter: drop-shadow(0 0 20px) drop-shadow(0 0 60px #3fefef);
+                animation: animate_text 0.5s steps(1) infinite;
             }
 
             .scan {
@@ -66,6 +69,15 @@
                 border-radius: 8px;
                 filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
                 animation: animate_line 4s ease-in-out infinite;
+            }
+
+            @keyframes animate_text {
+                0%,100%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 1;
+                }
             }
 
             @keyframes animate_line {
