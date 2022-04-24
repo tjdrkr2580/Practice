@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            html , body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background-color: #f2f2f2;
+            }
+            #frame {
+                width: 300px;
+                height: 450px;
+                transition: transform 200ms;
+            }
+
+            #frame:hover {
+                transform: scale3d(1.05,1.05,1.05);
+            }
+
+            #card {
+                width: 100%;
+                height: 100%;
+                background-image: url("./6ab95831-7075-4b6f-92b6-c04bd3d95a91.jpg");
+                border-radius: 9px;
+                background-position: center;
+                background-repeat: no-repeat;
+                box-sizing: 0 0 10px 2px rgba(0,0,0,0.1);
+                position: relative;
+                transition-duration: 250ms;
+                transition-property: transform , box-shadow;
+                transition-timing-function: ease-out;
+            }
+
+            #light {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 9px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="frame">
+            <div id="card">
+                <div id="light"></div>
+            </div>
+        </div>
+        <script>
+            const frame = document.getElementById('frame');
+            const card = document.getElementById('card');
+            const light = document.getElementById('light');
+            let { x , y ,width , height } = frame.getBoundingClientRect();
+
+            const mouseMove = (e) =>{
+                const left = e.clientX - x;
+                const top = e.clientY - y;
+                const centerX = left - width / 2;
+                const centerY = top - height / 2;
+                const d = Math.sqrt(centerX**2 + centerY**2);
+
+                card.style.boxShadow = `
+                ${-centerX/10}px ${-centerY/10}px 10px rgba(0,0,0,0.1)
+                `
+                card.style.transform = `
+                rotate3d(
+                    ${-centerY / 100}, ${centerX / 100}, 0 ,${d/10}deg
+                    )`
+                light.style.backgroundImage = `
+                radial-gradient(
+                    circle at ${left}px ${top}px, #00000010 , #ffffff00 , #ffffff70
+                )
+                `
+            }
+
+            frame.addEventListener("mouseenter",()=>{
+                frame.addEventListener('mousemove' , mouseMove);
+            });
+            frame.addEventListener("mouseleave",()=>{
+                frame.removeEventListener('mousemove', mouseMove);
+                card.style.boxShadow = '';
+                card.style.transform = '';
+                card.style.backgroundImage = '';
+            });
+
+            window.addEventListener("resize" , () => {
+                rect = frame.getBoundingClientRect();
+                x = rect.x;
+                y = rect.y; 
+             })
+        </script>
+    </body>
+
+</html>
