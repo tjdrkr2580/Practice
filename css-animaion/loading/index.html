@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .spinner {
+            border-radius: 50%;
+            background-image: linear-gradient(#fff,#fff),
+            linear-gradient(to right, red 0%, orange 100%);
+            background-origin: border-box;
+            border: 8px solid transparent;
+            position: absolute;
+            left: 50%; 
+            top: 50%; 
+            transform: translate(-50%,-50%);
+            width: 100px;
+            height: 100px;
+            background-clip: content-box , border-box;
+        }
+
+        @keyframes loading {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+</body>
+</html>
