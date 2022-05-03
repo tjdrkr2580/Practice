@@ -7,30 +7,42 @@
     <title>Loading</title>
     <style>
         body {
+            background-color: black;
             margin: 0;
             padding: 0;
         }
+
+        .spinner-wrapper {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
         .spinner {
             border-radius: 50%;
-            background-image: linear-gradient(#fff,#fff),
-            linear-gradient(to right, red 0%, orange 100%);
+            background-image: linear-gradient(black,black),
+            linear-gradient(to right, blue 8%, purple 92%);
             background-origin: border-box;
             border: 8px solid transparent;
             position: absolute;
-            left: 50%; 
-            top: 50%; 
-            transform: translate(-50%,-50%);
             width: 100px;
             height: 100px;
             background-clip: content-box , border-box;
+            animation: 1s loading infinite;
         }
 
         @keyframes loading {
-            
+           to {
+                transform: rotate(360deg);  
+           }
         }
     </style>
 </head>
 <body>
-    <div class="spinner"></div>
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
 </body>
 </html>
