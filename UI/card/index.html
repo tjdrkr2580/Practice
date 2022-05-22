@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card UI</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+       * {
+            font-family: 'Poppins', sans-serif;
+        }
+       
         body {
-            background-color: #cae4ff;
+            background-image: url(./assets/396534.jpg);
             font-size: 16px;
             margin: 0;
             padding: 0;
@@ -28,18 +33,36 @@
         }
 
         img {
-            filter: brightness(80%);
+            box-shadow: 20px 5px 20px black;
+            z-index: -1;
+            filter: brightness(20%);
             width: 15rem;
             height: 20rem;
             object-fit: cover;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 3rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="card"><img src="./assets/다운로드.jpg"></div>
-        <div class="card"><img src="./assets/images (1).jpg"></div>
-        <div class="card"><img src="./assets/rBVaWF1SHj-AdKltAAR0zHL3sBc726.jpg"></div>
+        <div class="card">
+            <img src="./assets/다운로드.jpg">
+        </div>
+        <div class="card">
+            <img src="./assets/images (1).jpg">
+        </div>
+        <div class="card">
+            <img src="./assets/rBVaWF1SHj-AdKltAAR0zHL3sBc726.jpg">
+        </div>
     </div>
 </body>
 </html>
