@@ -1,22 +1,18 @@
-$text-color: white;
-$main-color: cyan;
-$btn-width: 100px;
+@mixin box-style($bg-color:yellow,$font-color:green) {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color;
+    color: $font-color;
+}
+
+.one {
+    @include box-style();
+}
 
 
-button {
-    &:nth-child(1){
-        color: $text-color;
-        background-color: $main-color;
-        width: $btn-width;
-    }
-    &:nth-child(2){
-        color: $text-color;
-        background-color: $main-color;
-        width: $btn-width;
-    }
-    &:nth-child(3){
-        color: $text-color;
-        background-color: $main-color;
-        width: $btn-width;
-    }
+.two {
+    @include box-style(green,yellow);
 }

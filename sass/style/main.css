@@ -1,18 +1,32 @@
-button:nth-child(1) {
-  color: white;
-  background-color: cyan;
+.one {
   width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: yellow;
+  color: green;
 }
 
-button:nth-child(2) {
-  color: white;
-  background-color: cyan;
+.two {
   width: 100px;
-}
-
-button:nth-child(3) {
-  color: white;
-  background-color: cyan;
-  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: green;
+  color: yellow;
 }
 /*# sourceMappingURL=main.css.map */
