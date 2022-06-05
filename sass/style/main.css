@@ -1,16 +1,8 @@
-.container {
-  background-color: yellow;
+.first-btn:hover {
+  background-color: red;
 }
 
-.container h1 {
-  color: red;
-}
-
-.container p {
-  color: tomato;
-}
-
-.container p span {
-  color: blue;
+.second-btn:hover {
+  background-color: blue;
 }
 /*# sourceMappingURL=main.css.map */
