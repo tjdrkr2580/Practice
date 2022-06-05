@@ -1,16 +1,22 @@
-.first-btn {
-    &:hover {
-        background: {
-            color: red
-        };
+$text-color: white;
+$main-color: cyan;
+$btn-width: 100px;
+
+
+button {
+    &:nth-child(1){
+        color: $text-color;
+        background-color: $main-color;
+        width: $btn-width;
     }
-}
-
-
-.second-btn {
-    &:hover {
-        background: {
-            color: blue
-        };
+    &:nth-child(2){
+        color: $text-color;
+        background-color: $main-color;
+        width: $btn-width;
+    }
+    &:nth-child(3){
+        color: $text-color;
+        background-color: $main-color;
+        width: $btn-width;
     }
 }

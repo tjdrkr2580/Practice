@@ -1,8 +1,18 @@
-.first-btn:hover {
-  background-color: red;
+button:nth-child(1) {
+  color: white;
+  background-color: cyan;
+  width: 100px;
 }
 
-.second-btn:hover {
-  background-color: blue;
+button:nth-child(2) {
+  color: white;
+  background-color: cyan;
+  width: 100px;
+}
+
+button:nth-child(3) {
+  color: white;
+  background-color: cyan;
+  width: 100px;
 }
 /*# sourceMappingURL=main.css.map */
