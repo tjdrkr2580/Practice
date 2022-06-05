@@ -1,5 +1,16 @@
-h1 {
+.container {
+  background-color: yellow;
+}
+
+.container h1 {
   color: red;
-  background-color: green;
+}
+
+.container p {
+  color: tomato;
+}
+
+.container p span {
+  color: blue;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,15 @@
-h1 {
-    color: red;
-    background-color: green;
+.container {
+    background-color: yellow;
+    h1 {
+        color: red;
+    }
+
+    p {
+        color: tomato;
+        
+        span {
+            color: blue
+        }
+            
+    }
 }
